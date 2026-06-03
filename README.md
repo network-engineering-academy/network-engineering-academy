@@ -1,31 +1,31 @@
-<h1 align="center">🤖 Gemini YouTube Automation</h1>
+﻿<h1 align="center">ðŸ¤– Gemini YouTube Automation</h1>
 
 <p align="center">
-  <b>A fully autonomous AI bot that writes, produces, and uploads YouTube lessons daily — zero human input required.</b>
+  <b>A fully autonomous AI bot that writes, produces, and uploads YouTube lessons daily â€” zero human input required.</b>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChaituRajSagar/gemini-youtube-automation/actions/workflows/main.yml">
-    <img src="https://github.com/ChaituRajSagar/gemini-youtube-automation/actions/workflows/main.yml/badge.svg" alt="Daily Pipeline">
+  <a href="https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation/actions/workflows/main.yml">
+    <img src="https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation/actions/workflows/main.yml/badge.svg" alt="Daily Pipeline">
   </a>
   <img src="https://img.shields.io/badge/python-3.11-blue?logo=python&logoColor=white" alt="Python 3.11">
   <img src="https://img.shields.io/badge/powered%20by-Gemini%202.5-orange?logo=google&logoColor=white" alt="Gemini 2.5">
-  <img src="https://img.shields.io/github/stars/ChaituRajSagar/gemini-youtube-automation?style=social" alt="Stars">
-  <img src="https://img.shields.io/github/last-commit/ChaituRajSagar/gemini-youtube-automation" alt="Last Commit">
+  <img src="https://img.shields.io/github/stars/ChaitanyaEswarRajeshJakki/gemini-youtube-automation?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/ChaitanyaEswarRajeshJakki/gemini-youtube-automation" alt="Last Commit">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@ChaitanyaEswarRajeshJakki/videos">📺 Watch the Generated Videos on YouTube</a>
+  <a href="https://www.youtube.com/@ChaitanyaEswarRajeshJakki/videos">ðŸ“º Watch the Generated Videos on YouTube</a>
 </p>
 
 ---
 
 ## Demo
 
-![Demo — AI-generated lesson video](images/demo.gif)
+![Demo â€” AI-generated lesson video](images/demo.gif)
 
-[![Watch on YouTube](https://img.shields.io/badge/▶%20Watch%20on%20YouTube-red?logo=youtube&logoColor=white&style=for-the-badge)](https://www.youtube.com/@ChaitanyaEswarRajeshJakki/videos)
+[![Watch on YouTube](https://img.shields.io/badge/â–¶%20Watch%20on%20YouTube-red?logo=youtube&logoColor=white&style=for-the-badge)](https://www.youtube.com/@ChaitanyaEswarRajeshJakki/videos)
 
 ---
 
@@ -36,8 +36,8 @@ Every day at **7:00 AM UTC**, this bot runs entirely on GitHub Actions and:
 1. **Reads** the content plan to pick the next pending lesson
 2. **Writes** a full multi-slide script using Gemini 2.5 Flash
 3. **Generates** narration audio (gTTS) and fetches Pexels background imagery
-4. **Renders** a professional slide-based video (1920×1080) with background music
-5. **Renders** a vertical YouTube Short (1080×1920) from the same lesson
+4. **Renders** a professional slide-based video (1920Ã—1080) with background music
+5. **Renders** a vertical YouTube Short (1080Ã—1920) from the same lesson
 6. **Creates** a custom thumbnail for each format
 7. **Uploads** both videos to YouTube with titles, descriptions, and hashtags
 8. **Updates** `content_plan.json` and commits it back to the repo
@@ -50,52 +50,52 @@ No local machine. No manual steps. Every video in the channel was made by this p
 
 ```text
 GitHub Actions Scheduler (7 AM UTC)
-          │
-          ▼
-  ┌───────────────────┐
-  │  content_plan.json │  ◄── picks next "pending" lesson
-  └────────┬──────────┘
-           │
-           ▼
-  ┌─────────────────────────────────┐
-  │  Gemini 2.5 Flash               │
-  │  • 7–8 slide lesson script      │
-  │  • 1-sentence YouTube Short     │
-  │  • hashtags + metadata          │
-  └────────┬────────────────────────┘
-           │
-           ▼
-  ┌──────────────────────────────────────┐
-  │  Video Renderer (MoviePy + PIL)      │
-  │  • gTTS narration per slide          │
-  │  • Pexels background images          │
-  │  • Background music mix              │
-  │  • Long-form (16:9) + Short (9:16)   │
-  └────────┬─────────────────────────────┘
-           │
-           ▼
-  ┌────────────────────────┐
-  │  YouTube Data API v3   │  ◄── uploads with thumbnails
-  └────────┬───────────────┘
-           │
-           ▼
-  ┌────────────────────────┐
-  │  git commit + push     │  ◄── marks lesson "complete"
-  └────────────────────────┘
+          â”‚
+          â–¼
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚  content_plan.json â”‚  â—„â”€â”€ picks next "pending" lesson
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+           â–¼
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚  Gemini 2.5 Flash               â”‚
+  â”‚  â€¢ 7â€“8 slide lesson script      â”‚
+  â”‚  â€¢ 1-sentence YouTube Short     â”‚
+  â”‚  â€¢ hashtags + metadata          â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+           â–¼
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚  Video Renderer (MoviePy + PIL)      â”‚
+  â”‚  â€¢ gTTS narration per slide          â”‚
+  â”‚  â€¢ Pexels background images          â”‚
+  â”‚  â€¢ Background music mix              â”‚
+  â”‚  â€¢ Long-form (16:9) + Short (9:16)   â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+           â–¼
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚  YouTube Data API v3   â”‚  â—„â”€â”€ uploads with thumbnails
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+           â–¼
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚  git commit + push     â”‚  â—„â”€â”€ marks lesson "complete"
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
 
 ## Features
 
-- **Zero-touch operation** — fully autonomous, runs on a cron schedule
-- **Dual-format output** — long-form lesson video AND a YouTube Short per day
-- **AI-generated curriculum** — Gemini creates and extends the course plan automatically
-- **Dynamic visuals** — Pexels stock imagery matched to each slide topic
-- **Professional audio** — per-slide narration with soft background music
-- **Custom thumbnails** — auto-generated for every video
-- **Self-updating repo** — content plan committed back after each successful run
-- **GitHub Actions native** — no server, no hosting cost, just free CI runners
+- **Zero-touch operation** â€” fully autonomous, runs on a cron schedule
+- **Dual-format output** â€” long-form lesson video AND a YouTube Short per day
+- **AI-generated curriculum** â€” Gemini creates and extends the course plan automatically
+- **Dynamic visuals** â€” Pexels stock imagery matched to each slide topic
+- **Professional audio** â€” per-slide narration with soft background music
+- **Custom thumbnails** â€” auto-generated for every video
+- **Self-updating repo** â€” content plan committed back after each successful run
+- **GitHub Actions native** â€” no server, no hosting cost, just free CI runners
 
 ---
 
@@ -118,7 +118,7 @@ GitHub Actions Scheduler (7 AM UTC)
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/ChaituRajSagar/gemini-youtube-automation.git
+git clone https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation.git
 cd gemini-youtube-automation
 ```
 
@@ -130,7 +130,7 @@ pip install -r requirements.txt
 
 ### 3. Configure GitHub Secrets
 
-Go to **Settings → Secrets and variables → Actions** and add:
+Go to **Settings â†’ Secrets and variables â†’ Actions** and add:
 
 | Secret | Description |
 | --- | --- |
@@ -149,7 +149,7 @@ python main.py
 
 ## Content Progress
 
-The bot is currently producing the **"AI for Developers"** series — a beginner-friendly course that takes developers from zero to advanced AI.
+The bot is currently producing the **"AI for Developers"** series â€” a beginner-friendly course that takes developers from zero to advanced AI.
 
 Topics covered include: Generative AI, LLMs, Prompt Engineering, RAG, Vector Databases, LangGraph, Fine-tuning, Computer Vision, and more.
 
@@ -165,7 +165,7 @@ Track progress live in [content_plan.json](content_plan.json).
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ChaituRajSagar/gemini-youtube-automation&type=Date)](https://star-history.com/#ChaituRajSagar/gemini-youtube-automation&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ChaitanyaEswarRajeshJakki/gemini-youtube-automation&type=Date)](https://star-history.com/#ChaitanyaEswarRajeshJakki/gemini-youtube-automation&Date)
 
 ---
 

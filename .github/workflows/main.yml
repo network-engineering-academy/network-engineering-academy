@@ -66,11 +66,25 @@ jobs:
           name: final-videos
           path: output/*.mp4
 
-      - name: 💾 Commit and push content plan changes
+      - name: 🎞️ Generate demo GIF from latest video
+        if: steps.production-run.outcome == 'success'
+        run: |
+          VIDEO=$(ls output/long_video_*.mp4 2>/dev/null | head -n 1)
+          if [ -n "$VIDEO" ]; then
+            echo "✅ Found video: $VIDEO — converting to GIF..."
+            ffmpeg -y -ss 0 -t 12 -i "$VIDEO" \
+              -filter_complex "[0:v] fps=8,scale=320:-1:flags=lanczos,split [a][b];[a] palettegen [p];[b][p] paletteuse" \
+              images/demo.gif
+            echo "✅ Demo GIF created at images/demo.gif"
+          else
+            echo "⚠️ No long video found in output/, skipping GIF creation."
+          fi
+
+      - name: 💾 Commit and push content plan and demo GIF
         if: steps.production-run.outcome == 'success'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add content_plan.json
-          git commit -m "feat: Update content plan after daily video production" || echo "No changes to commit"
+          git add content_plan.json images/demo.gif
+          git commit -m "feat: Update content plan and demo GIF after daily video production" || echo "No changes to commit"
           git push

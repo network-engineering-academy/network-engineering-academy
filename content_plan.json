@@ -1,142 +1,142 @@
 {
   "lessons": [
     {
-      "chapter": 21,
+      "chapter": 1,
       "part": 1,
-      "title": "Generative AI Beyond Text: An Introduction to GANs & Diffusion Models",
-      "status": "complete",
-      "youtube_id": "UQMq8rGyzwI"
-    },
-    {
-      "chapter": 22,
-      "part": 1,
-      "title": "Generative Adversarial Networks (GANs): The Art Forgers of AI",
-      "status": "complete",
-      "youtube_id": "6p9tCIkReM0"
-    },
-    {
-      "chapter": 23,
-      "part": 1,
-      "title": "Diffusion Models Demystified: Creating Images from Noise",
-      "status": "complete",
-      "youtube_id": "OthhyvOyasU"
-    },
-    {
-      "chapter": 24,
-      "part": 1,
-      "title": "Text-to-Image Generation: Prompting for Visuals",
-      "status": "complete",
-      "youtube_id": "UxlVjj6vCRs"
-    },
-    {
-      "chapter": 25,
-      "part": 1,
-      "title": "Building a Simple Image Generation App: From Concept to Code",
+      "title": "What Is a Network? From Two Computers to the Internet",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 26,
+      "chapter": 2,
       "part": 1,
-      "title": "Building Smarter Agents: Planning and Reasoning",
+      "title": "IP Addresses Explained: The Phonebook of the Internet",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 27,
+      "chapter": 3,
       "part": 1,
-      "title": "Tool Use for LLMs: Giving Your AI Hands and Eyes (Practical API Integration)",
+      "title": "Subnetting Made Simple: Why Networks Need Neighborhoods",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 28,
+      "chapter": 4,
       "part": 1,
-      "title": "Memory for Agents: Beyond Vector Databases",
+      "title": "DNS Demystified: How Your Browser Finds Websites",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 29,
+      "chapter": 5,
       "part": 1,
-      "title": "Multi-Agent Systems: AI Teams Working Together",
+      "title": "How Wi-Fi Actually Works: Radio Waves, Channels, and Speed",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 30,
+      "chapter": 6,
       "part": 1,
-      "title": "Designing Autonomous Agents: The Future of AI Action",
+      "title": "Ethernet and Cabling: The Physical Side of Networking",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 31,
+      "chapter": 7,
       "part": 1,
-      "title": "MLOps Fundamentals: Bringing AI Models to Life (Deployment & Versioning)",
+      "title": "Routers vs Switches vs Hubs: Who Does What",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 32,
+      "chapter": 8,
       "part": 1,
-      "title": "Monitoring and Maintaining AI Models: Keeping Your AI Healthy",
+      "title": "VLANs Explained: Splitting One Network Into Many",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 33,
+      "chapter": 9,
       "part": 1,
-      "title": "Scalable AI Architectures: Designing for Growth",
+      "title": "The OSI Model: The 7 Layers Nobody Actually Remembers",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 34,
+      "chapter": 10,
       "part": 1,
-      "title": "Cloud AI Services: Leveraging AWS, GCP, Azure for AI",
+      "title": "TCP vs UDP: Reliable Delivery vs Speed",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 35,
+      "chapter": 11,
       "part": 1,
-      "title": "Optimizing AI Costs: Smart Spending for Smart Models",
+      "title": "NAT and Port Forwarding: How One IP Becomes Many",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 36,
+      "chapter": 12,
       "part": 1,
-      "title": "Ethical AI: Building Fair and Responsible Systems",
+      "title": "VPNs: How They Actually Work (Not the Marketing Version)",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 37,
+      "chapter": 13,
       "part": 1,
-      "title": "AI Bias: Unmasking Hidden Prejudices in Your Models",
+      "title": "Firewalls: Stateful vs Stateless in Plain English",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 38,
+      "chapter": 14,
       "part": 1,
-      "title": "Explainable AI (XAI): Understanding Why Your AI Does What It Does",
+      "title": "DHCP: How Your Devices Get an Address Automatically",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 39,
+      "chapter": 15,
       "part": 1,
-      "title": "Probabilistic AI: Dealing with Uncertainty",
+      "title": "Routing Protocols: BGP, OSPF, and How the Internet Routes",
       "status": "pending",
       "youtube_id": null
     },
     {
-      "chapter": 40,
+      "chapter": 16,
       "part": 1,
-      "title": "The Future of AI: Emerging Trends and What's Next for Developers",
+      "title": "What Is a Proxy? Forward vs Reverse Proxies Explained",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 17,
+      "part": 1,
+      "title": "Network Security Basics: Threats Every Admin Should Know",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 18,
+      "part": 1,
+      "title": "Monitoring Your Network: SNMP, NetFlow, and Logs",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 19,
+      "part": 1,
+      "title": "Cloud Networking: VPCs, Subnets, and Gateways",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 20,
+      "part": 1,
+      "title": "The Future of Networking: SDN, 5G, and Beyond",
       "status": "pending",
       "youtube_id": null
     }

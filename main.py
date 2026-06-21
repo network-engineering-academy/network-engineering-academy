@@ -60,11 +60,11 @@ def produce_lesson_videos(lesson):
     print("\n--- Producing Long-Form Video ---")
 
     intro_slide = {"title": lesson['title'], "content": f"Chapter {lesson['chapter']} | Part {lesson['part']}"}
-    outro_slide = {"title": "Thanks for Watching!", "content": "Like, Share & Subscribe for more daily AI content!\n#AIforDevelopers"}
+    outro_slide = {"title": "Thanks for Watching!", "content": "Like, Share & Subscribe for more networking content!\n#NetEngAcademy"}
     all_slides = [intro_slide] + lesson_content['long_form_slides'] + [outro_slide]
 
     slide_scripts = [
-        f"Hello and welcome to AI for Developers. I'm {YOUR_NAME} talking bot. Today’s lesson is titled {lesson['title']}.",
+        f"Hello and welcome to Network Engineering Academy. I'm your AI instructor. Today's lesson is titled {lesson['title']}.",
         *[s['content'] for s in lesson_content['long_form_slides']],
         "Thanks for watching! If you found this helpful, make sure to subscribe to our channel and hit the like button."
     ]
@@ -108,7 +108,7 @@ def produce_lesson_videos(lesson):
     short_slide_dir = OUTPUT_DIR / f"slides_short_{unique_id}"
     short_slide_content = {
         "title": "Quick Tip!",
-        "content": f"{lesson_content['short_form_highlight']}\n\n#AI for developers by chaitanya"
+        "content": f"{lesson_content['short_form_highlight']}\n\n#Networking #NetEngAcademy"
     }
     short_slide_path = generate_visuals(
         output_dir=short_slide_dir,
@@ -129,9 +129,9 @@ def produce_lesson_videos(lesson):
     )
 
     print("\n📤 Uploading to YouTube...")
-    hashtags = lesson_content.get("hashtags", "#AI #Developer #LearnAI")
-    long_desc = f"Part of the 'AI for Developers' series by {YOUR_NAME}.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
-    long_tags = "AI, Artificial Intelligence, Developer, Programming, Tutorial, " + lesson['title'].replace(" ", ", ")
+    hashtags = lesson_content.get("hashtags", "#Networking #IT #CCNA #Routing #Switching #TechEducation")
+    long_desc = f"Part of the 'Network Engineering Academy' series.\n\nToday's Lesson: {lesson['title']}\n\n{hashtags}"
+    long_tags = "Networking, IT, CCNA, Routing, Switching, Network Engineer, Tutorial, " + lesson['title'].replace(" ", ", ")
 
     long_video_id = upload_to_youtube(
         long_video_path,
@@ -146,7 +146,7 @@ def produce_lesson_videos(lesson):
         time.sleep(30)
         highlight = (lesson_content.get('short_form_highlight') or '').strip()
         if not highlight:
-            highlight = f"AI Quick Tip: {lesson['title']}"
+            highlight = f"Networking Quick Tip: {lesson['title']}"
         short_title = f"{highlight[:90].rstrip()} #Shorts"
         # short_desc = f"Watch the full lesson with {YOUR_NAME} here: https://www.youtube.com/watch?v={long_video_id}\n\n#AI #Programming #Tech #Developer"
         short_desc = (f"{lesson_content['short_form_highlight']}\n\n"
@@ -156,7 +156,7 @@ def produce_lesson_videos(lesson):
             short_video_path,
             short_title.strip(),
             short_desc,
-            "AI,Shorts,TechTip",
+            "Networking,Shorts,TechTip",
             short_thumb_path
         )
         return long_video_id
@@ -164,7 +164,7 @@ def produce_lesson_videos(lesson):
 
 
 def main():
-    print("🚀 Starting Autonomous AI Course Generator")
+    print("🚀 Starting Network Engineering Academy Generator")
     print(f"📁 Current working dir: {os.getcwd()}")
     print(f"📁 OUTPUT_DIR: {OUTPUT_DIR.resolve()}")
 

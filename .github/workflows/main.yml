@@ -40,10 +40,12 @@ jobs:
           echo "✅ Dependencies installed."
 
       - name: 🔑 Restore API credentials from base64
+        env:
+          CLIENT_SECRET_B64: ${{ secrets.CLIENT_SECRET_B64 }}
+          CREDENTIALS_B64: ${{ secrets.CREDENTIALS_B64 }}
         run: |
-          echo "${{ secrets.CLIENT_SECRET_B64 }}" | base64 -d > client_secrets.json
-          echo "${{ secrets.CREDENTIALS_B64 }}" | base64 -d > credentials.json
-        shell: bash
+          printf '%s\n' "$CLIENT_SECRET_B64" | base64 -d > client_secrets.json
+          printf '%s\n' "$CREDENTIALS_B64" | base64 -d > credentials.json
 
       - name: 🚀 Run Autonomous Production Pipeline
         id: production-run

@@ -98,7 +98,13 @@ Respond with ONLY a valid JSON object. The object must contain a key "lessons" w
 Each lesson object must have these keys: "chapter", "part", "title", "status" (defaulted to "pending"), and "youtube_id" (defaulted to null).
 """
         response = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
-        json_string = response.text.strip().replace("```json", "").replace("```", "")
+        json_string = response.text.strip()
+        # Extract JSON more robustly: find first { and last }
+        start = json_string.find('{')
+        end = json_string.rfind('}')
+        if start != -1 and end != -1 and end > start:
+            json_string = json_string[start:end+1]
+        print(f"Curriculum response received ({len(json_string)} chars)")
         curriculum = json.loads(json_string)
         print("New curriculum generated successfully!")
         return curriculum
@@ -125,7 +131,13 @@ Generate a JSON response with three keys:
 Return only valid JSON.
 """
         response = client.models.generate_content(model='gemini-2.5-flash', contents=prompt)
-        json_string = response.text.strip().replace("```json", "").replace("```", "")
+        json_string = response.text.strip()
+        # Extract JSON more robustly: find first { and last }
+        start = json_string.find('{')
+        end = json_string.rfind('}')
+        if start != -1 and end != -1 and end > start:
+            json_string = json_string[start:end+1]
+        print(f"Lesson content response received ({len(json_string)} chars)")
         content = json.loads(json_string)
         print("Lesson content generated successfully.")
         return content

@@ -18,7 +18,7 @@ ASSETS_PATH = Path("assets")
 FONT_FILE = ASSETS_PATH / "fonts/arial.ttf"
 BACKGROUND_MUSIC_PATH = ASSETS_PATH / "music/bg_music.mp3"
 FALLBACK_THUMBNAIL_FONT = ImageFont.load_default()
-YOUR_NAME = "NetEng Academy"
+YOUR_NAME = "Network Academy Fun"
 
 # GitHub Actions compatibility for ImageMagick
 if os.name == 'posix':
@@ -85,15 +85,14 @@ def generate_curriculum(previous_titles=None):
             formatted = "\n".join([f"{i+1}. {t}" for i, t in enumerate(previous_titles)])
             history = f"The following lessons have already been created:\n{formatted}\n\nPlease continue from where this series left off.\n"
 
-        prompt = f"""
-You are an expert network engineering educator for the YouTube series 'Network Engineering Academy'.
-{history}
-The style must be: 'Assume the viewer is a complete beginner with no networking background.
-Use simple real-world analogies, relatable examples, and then connect to technical concepts.
-Explain things like you are talking to someone who just started learning IT.'
-
-The curriculum must guide a beginner from absolute zero to a solid understanding of networking,
-covering foundations like IP addressing, DNS, routing, switching, VLANs, firewalls, VPNs, and cloud networking.
+        prompt = f"""You are a fun, engaging host for the YouTube series 'Network Academy Fun'.
+{history}The channel follows my personal journey to become a data center engineer - but we're having fun along the way.
+The style must be: 'Assume the viewer is a complete beginner. Speak like a friend who's excited about networking.
+Use humor, real-world analogies, relatable stories, and make complex topics feel like an adventure.'
+Every lesson should feel like part of a journey - each one is a stepping stone toward becoming a real data center engineer.
+Cover the full path from absolute zero to solid data center networking knowledge:
+cabling, IP, DNS, routing, switching, VLANs, firewalls, load balancers, BGP, data center topologies (spine-leaf),
+monitoring, automation, cloud networking, and real operations experience.
 
 Respond with ONLY a valid JSON object. The object must contain a key "lessons" which is a list of 20 lesson objects.
 Each lesson object must have these keys: "chapter", "part", "title", "status" (defaulted to "pending"), and "youtube_id" (defaulted to null).
@@ -114,14 +113,14 @@ def generate_lesson_content(lesson_title):
     try:
         client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
         prompt = f"""
-You are creating a lesson for the 'Network Engineering Academy' series. The topic is '{lesson_title}'.
-The style is: Assume the viewer is a complete beginner who wants to learn networking from scratch.
-Use analogies and clear, simple language. Each concept must be explained in plain English, assuming no prior networking knowledge.
+You are creating a fun lesson for the 'Network Academy Fun' series — a channel about one person's journey to become a data center engineer. The topic is '{lesson_title}'.
+The style is: Friendly, enthusiastic, and beginner-friendly. Talk like a friend who's excited to share what they're learning.
+Use analogies, humor, and keep things light — even complex topics should feel approachable and fun.
 
 Generate a JSON response with three keys:
 1. "long_form_slides": A list of 7 to 8 slide objects for a longer, more detailed main video. Each object needs a "title" and "content" key.
 2. "short_form_highlight": A single, punchy, 1-2 sentence summary for a YouTube Short.
-3. "hashtags": A string of 5-7 relevant, space-separated hashtags for this lesson (e.g., "#Networking #IT #CCNA #Routing #Switching #TechEducation").
+3. "hashtags": A string of 5-7 relevant, space-separated hashtags for this lesson (e.g., "#Networking #DataCenter #CCNA #Routing #Switching #Tech #Journey").
 
 Return only valid JSON.
 """
@@ -231,7 +230,7 @@ def generate_visuals(output_dir, video_type, slide_content=None, thumbnail_title
         # Footer
         footer_height = int(height * 0.06)
         draw.rectangle([0, height - footer_height, width, height], fill=(25, 40, 65, 200))
-        draw.text((40, height - footer_height + 12), f"Network Engineering Academy", font=footer_font, fill=(180, 180, 180))
+        draw.text((40, height - footer_height + 12), f"Network Academy Fun", font=footer_font, fill=(180, 180, 180))
 
         if total_slides > 0:
             slide_num_text = f"Slide {slide_number} of {total_slides}"

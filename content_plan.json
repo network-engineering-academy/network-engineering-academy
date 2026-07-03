@@ -1,0 +1,144 @@
+{
+  "lessons": [
+    {
+      "chapter": 1,
+      "part": 1,
+      "title": "Welcome to Network Academy Fun! Your Adventure Begins!",
+      "status": "complete",
+      "youtube_id": "751sC1_FcXk"
+    },
+    {
+      "chapter": 1,
+      "part": 2,
+      "title": "What Even IS a Network? From Coffee Shops to the Cosmos!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 1,
+      "part": 3,
+      "title": "The Spaghetti Monster's Secret: Cables, Connectors & How We Plug In!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 1,
+      "part": 4,
+      "title": "Your Network Passport: Decoding IP Addresses (The Basics)!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 1,
+      "part": 5,
+      "title": "Sharing Your Digital Neighborhood: IP Addresses & Subnets Unleashed!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 6,
+      "title": "The Internet's Phonebook: How DNS Makes Sense of Crazy Websites!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 7,
+      "title": "Digital Traffic Cops: How Routing Guides Your Data Home!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 2,
+      "part": 8,
+      "title": "The Network's Mail Sorter: What Even IS a Network Switch?",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 9,
+      "title": "VIP Sections for Your Data: Diving into the World of VLANs!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 10,
+      "title": "The Bouncer at the Digital Club: Firewalls & Your Network's Security!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 3,
+      "part": 11,
+      "title": "Sharing the Love (and the Load!): How Load Balancers Keep Things Smooth!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 12,
+      "title": "How the Entire Internet Agrees to Talk: A Peek at BGP!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 13,
+      "title": "Welcome to the Digital Brain: Inside a Real Data Center!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 4,
+      "part": 14,
+      "title": "The Superhighway System: Unpacking Spine-Leaf Data Center Topologies!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 15,
+      "title": "Your Network's Health Report: Monitoring Tools & Keeping an Eye on Things!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 16,
+      "title": "Waving a Magic Wand: Introduction to Network Automation!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 5,
+      "part": 17,
+      "title": "Making Machines Do the Work: Scripts, APIs, & Practical Automation!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 18,
+      "title": "Networking in the Clouds: Cloud Networking Basics & Beyond!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 19,
+      "title": "From Theory to Reality: Simulating Real-World Network Operations!",
+      "status": "pending",
+      "youtube_id": null
+    },
+    {
+      "chapter": 6,
+      "part": 20,
+      "title": "You're a Network Engineer! The Journey Continues (Next Steps!)",
+      "status": "pending",
+      "youtube_id": null
+    }
+  ]
+}

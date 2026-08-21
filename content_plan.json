@@ -3,142 +3,142 @@
     {
       "chapter": 21,
       "part": 1,
-      "title": "Your Network's Blueprint: Infrastructure as Code & Why It's Awesome!",
+      "title": "Your Network's Nervous System: Unraveling the Mystery of Cabling!",
       "status": "complete",
-      "youtube_id": "sZWl7jKKDWA"
+      "youtube_id": "vR0XUx7-LQ0"
     },
     {
       "chapter": 22,
       "part": 1,
-      "title": "Automating the Planet (or Your Network!): A Peek at Ansible & Terraform!",
-      "status": "complete",
-      "youtube_id": "0OyBsBQ0r-c"
+      "title": "Decoding the Secret Language: A Fun Intro to IP Addresses!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 23,
       "part": 1,
-      "title": "The Network Detective: Solving Mysteries with Troubleshooting Methodologies!",
-      "status": "complete",
-      "youtube_id": "5KacpaR6gcw"
+      "title": "Subnetting Superpowers: How to Slice & Dice Your Network Like a Pro!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 24,
       "part": 1,
-      "title": "Where Did My Packet Go?! Common Network Gremlins & How to Find Them!",
-      "status": "complete",
-      "youtube_id": "EONu8Pzj6BQ"
+      "title": "Your Network's Phone Book: What is DNS & Why You Can't Live Without It!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 25,
       "part": 1,
-      "title": "X-Ray Vision for Your Network: Wireshark & Packet Analysis!",
-      "status": "complete",
-      "youtube_id": "AEviJNYxzSc"
+      "title": "Who's There? MAC Address Magic & How Devices Find Each Other!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 26,
       "part": 1,
-      "title": "The Magic Tunnels: Unmasking VXLAN for Modern Data Centers!",
-      "status": "complete",
-      "youtube_id": "O9vBPYNhKDQ"
+      "title": "The Network's Traffic Cop: Unmasking the Mighty Switch!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 27,
       "part": 1,
-      "title": "Your Network's GPS & Postal Service Combined: Demystifying EVPN!",
-      "status": "complete",
-      "youtube_id": "LZxxIYr7XTQ"
+      "title": "Virtual Neighborhoods: VLANs, Trunks, & Keeping Your Network Tidy!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 28,
       "part": 1,
-      "title": "Beyond the Bouncer: Network Access Control & Who Gets In!",
-      "status": "complete",
-      "youtube_id": "NepjHol1jpQ"
+      "title": "Your Network's GPS: The Exciting World of Routing & Routers!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 29,
       "part": 1,
-      "title": "Stopping the Digital Mob: DDoS & Intrusion Detection/Prevention!",
-      "status": "complete",
-      "youtube_id": "fcc4hvZCUs8"
+      "title": "Static vs. Dynamic Routes: Who's Giving Your Packets Directions?",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 30,
       "part": 1,
-      "title": "Your Network's Never-Say-Die Spirit: High Availability & Redundancy!",
-      "status": "complete",
-      "youtube_id": "20XYK2pSMfQ"
+      "title": "OSPF: The Social Network for Your Routers! (Making Friends & Sharing Routes!)",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 31,
       "part": 1,
-      "title": "The Backup Squad: HSRP, VRRP, & Keeping Your Routers Alive!",
-      "status": "complete",
-      "youtube_id": "IhiVzXjpjL8"
+      "title": "The Network's Bouncer: What is a Firewall & How It Keeps the Bad Guys Out!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 32,
       "part": 1,
-      "title": "First Class for Your Packets: Understanding Quality of Service (QoS)!",
-      "status": "complete",
-      "youtube_id": "Lxf4tLbkCm0"
+      "title": "Spreading the Love: How Load Balancers Handle All Your Traffic!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 33,
       "part": 1,
-      "title": "Building Digital Bridges: Hybrid Cloud Networking Magic!",
-      "status": "complete",
-      "youtube_id": "MZUvJdT0L6g"
+      "title": "Beyond the Basics: Advanced Firewall Fun & Building Secure Zones!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 34,
       "part": 1,
-      "title": "Your Cloud's Private Neighborhoods: VPCs, Transit Gateways, & More!",
-      "status": "complete",
-      "youtube_id": "BUmLYabefMU"
+      "title": "The Internet's Secret Handshake: Demystifying BGP! (How the Internet Connects!)",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 35,
       "part": 1,
-      "title": "The Network's Pulse Check: Advanced Performance Monitoring!",
-      "status": "complete",
-      "youtube_id": "tnUZ93Nkfxw"
+      "title": "Building the Future: Why Your Data Center Needs Spine-Leaf Topology!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 36,
       "part": 1,
-      "title": "Traffic Census for Your Network: NetFlow, IPFIX, & Telemetry!",
-      "status": "complete",
-      "youtube_id": "GOynkIrYiwo"
+      "title": "Inside the Fabric: Routing & Scaling with Spine-Leaf Networks!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 37,
       "part": 1,
-      "title": "Networking in the Matrix: Demystifying Network Virtualization!",
-      "status": "complete",
-      "youtube_id": "etqRBxaDrz8"
+      "title": "Your Network's Crystal Ball: Proactive Monitoring & Catching Problems Early!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 38,
       "part": 1,
-      "title": "The Network's Brain Transplant: Introduction to Software-Defined Networking!",
-      "status": "complete",
-      "youtube_id": "khuSo0Vmu4M"
+      "title": "Automating Your Network Chores: Practical Scripts & Real-World Wins!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 39,
       "part": 1,
-      "title": "Networking on Demand: Exploring Network as a Service (NaaS)!",
-      "status": "complete",
-      "youtube_id": "c6rtR9HbcHQ"
+      "title": "Cloud Networking Unlocked: Deeper Dives into Hybrid & Multi-Cloud Connects!",
+      "status": "pending",
+      "youtube_id": null
     },
     {
       "chapter": 40,
       "part": 1,
-      "title": "Your Data Center Engineer Toolkit: Mastering the Future & What's Next!",
-      "status": "complete",
-      "youtube_id": "hnA2xWKvjww"
+      "title": "The Data Center Engineer's Diary: Real-World Operations & What Comes Next!",
+      "status": "pending",
+      "youtube_id": null
     }
   ]
 }
